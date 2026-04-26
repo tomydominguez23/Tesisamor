@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan&Go | Autogestiona tu viaje</title>
+    <meta
+      name="description"
+      content="Plan&Go integra inspiración, planificación y reservas en una sola plataforma para viajes autogestionados."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-content">
+        <a href="#" class="brand" aria-label="Plan&Go inicio">
+          <span class="brand-mark">✦</span>
+          <span>Plan&Go</span>
+        </a>
+        <nav class="nav">
+          <a href="#descubrir">Descubrir</a>
+          <a href="#planificar">Planificar</a>
+          <a href="#reservar">Reservar</a>
+          <a href="#opiniones">Reseñas</a>
+        </nav>
+        <a href="#cta" class="btn btn-outline">Comenzar</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <article class="hero-copy">
+            <p class="eyebrow">AUTOGESTIONA TU VIAJE</p>
+            <h1>
+              Descubre, organiza y reserva en un solo lugar con <span>Plan&Go</span>
+            </h1>
+            <p class="lead">
+              Una experiencia visual inspirada en videos cortos, reseñas reales e
+              itinerarios inteligentes para planificar viajes de forma simple,
+              confiable y flexible.
+            </p>
+            <div class="hero-actions">
+              <a href="#descubrir" class="btn btn-dark">Explorar destinos</a>
+              <a href="#planificar" class="btn btn-light">Ver demo</a>
+            </div>
+          </article>
+
+          <aside class="planner-card" aria-label="Buscador principal">
+            <h2>Planifica tu viaje</h2>
+            <p>Vamos a crear una experiencia inolvidable ✨</p>
+            <form class="planner-form">
+              <label>
+                ¿A dónde quieres ir?
+                <input type="text" placeholder="Ej. Bali, Santorini, Patagonia" />
+              </label>
+              <div class="row">
+                <label>
+                  Fechas
+                  <input type="text" placeholder="10 - 18 Agosto" />
+                </label>
+                <label>
+                  ¿Con quién viajas?
+                  <input type="text" placeholder="Pareja / Amigos / Familia" />
+                </label>
+              </div>
+              <button type="button" class="btn btn-dark full">
+                ✨ Buscar opciones
+              </button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories container" id="descubrir">
+        <header class="section-head">
+          <h2>Descubre según tu estilo de viaje</h2>
+          <p>Inspiración visual y categorías pensadas para cada tipo de aventura.</p>
+        </header>
+        <div class="chips">
+          <button class="chip active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="gastronomia">Restaurantes</button>
+          <button class="chip" data-filter="vida-nocturna">Bares</button>
+          <button class="chip" data-filter="hospedaje">Hoteles</button>
+          <button class="chip" data-filter="romantico">Romántico</button>
+          <button class="chip" data-filter="aventura">Aventura</button>
+          <button class="chip" data-filter="relax">Relajación</button>
+          <button class="chip" data-filter="vuelos">Vuelos</button>
+          <button class="chip" data-filter="sostenible">Sustentable</button>
+        </div>
+
+        <div class="destination-grid" id="destinationsGrid">
+          <article class="destination-card" data-category="relax sostenible">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+              alt="Playa tropical en Bali"
+            />
+            <div class="overlay">
+              <h3>Bali</h3>
+              <p>Indonesia · ⭐ 4.8</p>
+            </div>
+          </article>
+          <article class="destination-card" data-category="romantico relax">
+            <img
+              src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=80"
+              alt="Casas blancas en Santorini"
+            />
+            <div class="overlay">
+              <h3>Santorini</h3>
+              <p>Grecia · ⭐ 4.9</p>
+            </div>
+          </article>
+          <article class="destination-card" data-category="vida-nocturna vuelos">
+            <img
+              src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1000&q=80"
+              alt="Rascacielos en Nueva York"
+            />
+            <div class="overlay">
+              <h3>Nueva York</h3>
+              <p>Estados Unidos · ⭐ 4.7</p>
+            </div>
+          </article>
+          <article class="destination-card" data-category="aventura sostenible">
+            <img
+              src="https://images.unsplash.com/photo-1508261305438-4f33e9d56c6b?auto=format&fit=crop&w=1000&q=80"
+              alt="Montañas y lago en Banff"
+            />
+            <div class="overlay">
+              <h3>Banff</h3>
+              <p>Canadá · ⭐ 4.8</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="popular container">
+        <header class="section-head section-head-inline">
+          <h2>Experiencias más populares</h2>
+          <a href="#" aria-label="Ver más experiencias">Ver todas</a>
+        </header>
+        <div class="popular-grid">
+          <article class="popular-card">
+            <img
+              src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=1000&q=80"
+              alt="Snorkel con tortugas en agua cristalina"
+            />
+            <div class="overlay">
+              <span>Popular</span>
+              <h3>Snorkel con tortugas</h3>
+              <p>Desde $59 USD · Akumal, México</p>
+            </div>
+          </article>
+          <article class="popular-card">
+            <img
+              src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=1000&q=80"
+              alt="Vuelos en globo al amanecer"
+            />
+            <div class="overlay">
+              <span>Popular</span>
+              <h3>Vuelo en globo</h3>
+              <p>Desde $149 USD · Capadocia, Turquía</p>
+            </div>
+          </article>
+          <article class="popular-card">
+            <img
+              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80"
+              alt="Cena romántica con velas"
+            />
+            <div class="overlay">
+              <span>Popular</span>
+              <h3>Cena romántica</h3>
+              <p>Desde $120 USD · Santorini, Grecia</p>
+            </div>
+          </article>
+          <article class="popular-card">
+            <img
+              src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=80"
+              alt="Safari fotográfico de vida salvaje"
+            />
+            <div class="overlay">
+              <span>Popular</span>
+              <h3>Safari fotográfico</h3>
+              <p>Desde $210 USD · África del Sur</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reels container">
+        <header class="section-head">
+          <h2>Videos cortos para decidir mejor</h2>
+          <p>
+            Mira experiencias reales de viajeros, guarda ideas y conviértelas en
+            itinerarios en segundos.
+          </p>
+        </header>
+
+        <div class="phone-strip">
+          <article class="phone-mock">
+            <img
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+              alt="Video de destino tropical"
+            />
+            <div class="phone-meta">
+              <h3>Amanecer sobre el mar</h3>
+              <p>Maldivas · 12.4K me gusta</p>
+            </div>
+          </article>
+          <article class="phone-mock">
+            <img
+              src="https://images.unsplash.com/photo-1480497490787-505ec076689f?auto=format&fit=crop&w=800&q=80"
+              alt="Video de aventura en montaña"
+            />
+            <div class="phone-meta">
+              <h3>Lagos turquesa y trekking</h3>
+              <p>Canadá · 8.7K me gusta</p>
+            </div>
+          </article>
+          <article class="phone-mock">
+            <img
+              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80"
+              alt="Video urbano romántico"
+            />
+            <div class="phone-meta">
+              <h3>Calles mágicas al atardecer</h3>
+              <p>Grecia · 15.2K me gusta</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="features" id="planificar">
+        <div class="container">
+          <header class="section-head">
+            <h2>Todo el proceso en una sola plataforma</h2>
+            <p>
+              Plan&Go elimina la información dispersa y te da autonomía total para
+              crear tu viaje ideal.
+            </p>
+          </header>
+          <div class="feature-grid">
+            <article>
+              <h3>1) Inspírate</h3>
+              <p>
+                Explora destinos con videos reales, categorías y recomendaciones
+                personalizadas.
+              </p>
+            </article>
+            <article>
+              <h3>2) Organiza</h3>
+              <p>
+                Construye itinerarios por días, compara opciones y controla tiempos
+                y presupuesto.
+              </p>
+            </article>
+            <article id="reservar">
+              <h3>3) Reserva</h3>
+              <p>
+                Alojamientos, actividades y servicios turísticos sin salir de la
+                aplicación.
+              </p>
+            </article>
+            <article>
+              <h3>4) Decide con confianza</h3>
+              <p>
+                Usa reseñas verificadas y valoraciones de la comunidad para elegir
+                mejor.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="report container">
+        <div class="report-grid">
+          <article class="report-card">
+            <h3>Problema que aborda</h3>
+            <p>
+              La planificación de viajes está fragmentada entre redes sociales,
+              sitios de reservas y páginas de reseñas. Este salto constante entre
+              plataformas vuelve el proceso lento, confuso y poco práctico.
+            </p>
+          </article>
+          <article class="report-card">
+            <h3>Solución propuesta</h3>
+            <p>
+              Plan&Go integra inspiración audiovisual, información confiable,
+              organización de itinerarios y reservas directas en una única
+              experiencia digital centrada en el usuario.
+            </p>
+          </article>
+          <article class="report-card">
+            <h3>Objetivo del proyecto</h3>
+            <p>
+              Permitir que cada persona descubra, planifique y reserve con mayor
+              autonomía, flexibilidad y control, sin depender de intermediarios.
+            </p>
+          </article>
+          <article class="report-card">
+            <h3>Viabilidad</h3>
+            <p>
+              Se apoya en tecnologías disponibles (apps móviles, contenido visual y
+              motores de reserva), con implementación progresiva y alta demanda del
+              mercado turístico digital.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="planner container">
+        <article class="itinerary-card">
+          <header>
+            <h2>Mi viaje a Bali</h2>
+            <p>14 - 20 de octubre · Presupuesto optimizado</p>
+          </header>
+          <div class="tabs" role="tablist" aria-label="Días del itinerario">
+            <button class="tab active" data-day="1">Día 1</button>
+            <button class="tab" data-day="2">Día 2</button>
+            <button class="tab" data-day="3">Día 3</button>
+          </div>
+          <ul id="itineraryList" class="itinerary-list"></ul>
+        </article>
+
+        <article class="benefits-card">
+          <h3>Beneficios esperados</h3>
+          <ul>
+            <li>Menor tiempo de búsqueda y mejor toma de decisiones.</li>
+            <li>Mayor control, flexibilidad y ahorro al evitar intermediarios.</li>
+            <li>Experiencia de viaje más segura, personalizada y confiable.</li>
+            <li>Turismo responsable mediante decisiones informadas.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="reviews container" id="opiniones">
+        <header class="section-head">
+          <h2>Lo que valoran los usuarios</h2>
+        </header>
+        <div class="reviews-grid">
+          <blockquote>
+            “Pasé de usar 4 apps distintas a resolver todo en un solo lugar. El
+            itinerario por días me ahorró muchísimo tiempo.”
+            <cite>— Camila R., Chile</cite>
+          </blockquote>
+          <blockquote>
+            “Los videos y reseñas reales me ayudaron a elegir actividades con más
+            confianza. Reservé directo y sin complicaciones.”
+            <cite>— Luis M., México</cite>
+          </blockquote>
+          <blockquote>
+            “La app me permitió viajar a mi ritmo y dentro de mi presupuesto. Se
+            siente una herramienta de autogestión de verdad.”
+            <cite>— Ana P., España</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container cta-box">
+          <h2>Plan&Go: inspiración + planificación + reservas</h2>
+          <p>
+            Diseñada para las nuevas formas de viajar: visual, rápida, autónoma y
+            centrada en el usuario.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-dark">Solicitar demo</a>
+            <a href="#" class="btn btn-light">Descargar dossier</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Plan&Go · Autogestión turística inteligente.</p>
+      </div>
+    </footer>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="#">Inicio</a>
+      <a href="#descubrir">Explorar</a>
+      <a href="#cta" class="mobile-nav-main">+</a>
+      <a href="#planificar">Viajes</a>
+      <a href="#opiniones">Perfil</a>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
