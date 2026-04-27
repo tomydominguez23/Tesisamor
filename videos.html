@@ -17,20 +17,34 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="videos-page">
-    <main class="video-feed" aria-label="Feed de videos de destinos">
-      <article class="video-slide">
-        <img
-          src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80"
-          alt="Atardecer sobre un muelle en Maldivas"
-        />
+    <header class="feed-topbar">
+      <a href="./index.html" class="feed-back">← Plan&Go</a>
+      <div class="feed-title">
+        <p>Para ti</p>
+        <strong id="feedCounter">1 / 6</strong>
+      </div>
+    </header>
+
+    <main class="video-feed" id="videoFeed" aria-label="Feed de videos de destinos">
+      <article class="video-item is-active">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        </video>
         <div class="video-gradient"></div>
         <div class="video-content">
           <p class="video-tag">Para ti</p>
           <h1>Maldivas al atardecer</h1>
-          <p>Playas cristalinas, hoteles sobre el agua y cena frente al mar.</p>
+          <p>Desliza hacia abajo para cambiar de video como en TikTok.</p>
           <div class="video-actions">
             <a class="btn btn-dark" href="./index.html">Volver a inicio</a>
-            <a class="btn btn-light" href="#">Guardar destino</a>
+            <a class="btn btn-light" href="#">Guardar</a>
           </div>
         </div>
         <aside class="video-side">
@@ -40,22 +54,25 @@
         </aside>
       </article>
 
-      <article class="video-slide">
-        <img
-          src="https://images.unsplash.com/photo-1480497490787-505ec076689f?auto=format&fit=crop&w=1200&q=80"
-          alt="Montañas y lago turquesa en Canadá"
-        />
+      <article class="video-item">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1480497490787-505ec076689f?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        </video>
         <div class="video-gradient"></div>
         <div class="video-content">
           <p class="video-tag">Aventura</p>
-          <h2>Banff: lagos y trekking</h2>
-          <p>
-            Senderos panorámicos, naturaleza intacta y actividades outdoor para
-            todos los niveles.
-          </p>
+          <h2>Lagos turquesa y trekking</h2>
+          <p>Explora rutas de montaña y guarda el plan del día en un toque.</p>
           <div class="video-actions">
             <a class="btn btn-dark" href="#">Ver itinerario</a>
-            <a class="btn btn-light" href="#">Reservar actividad</a>
+            <a class="btn btn-light" href="#">Reservar</a>
           </div>
         </div>
         <aside class="video-side">
@@ -65,22 +82,25 @@
         </aside>
       </article>
 
-      <article class="video-slide">
-        <img
-          src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80"
-          alt="Calle cálida y romántica en Grecia"
-        />
+      <article class="video-item">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4" />
+        </video>
         <div class="video-gradient"></div>
         <div class="video-content">
           <p class="video-tag">Romántico</p>
-          <h2>Santorini: calles mágicas</h2>
-          <p>
-            Miradores, restaurantes con vista al mar y experiencias en pareja
-            para una escapada inolvidable.
-          </p>
+          <h2>Calles mágicas en Santorini</h2>
+          <p>Videos reales, reseñas y reservas directas en la misma pantalla.</p>
           <div class="video-actions">
             <a class="btn btn-dark" href="#">Leer reseñas</a>
-            <a class="btn btn-light" href="#">Agregar a viaje</a>
+            <a class="btn btn-light" href="#">Agregar</a>
           </div>
         </div>
         <aside class="video-side">
@@ -89,7 +109,98 @@
           <button type="button">↗ <span>Compartir</span></button>
         </aside>
       </article>
+
+      <article class="video-item">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/bee.mp4" type="video/mp4" />
+        </video>
+        <div class="video-gradient"></div>
+        <div class="video-content">
+          <p class="video-tag">Naturaleza</p>
+          <h2>Safari y vida silvestre</h2>
+          <p>Descubre experiencias eco y añade actividades sustentables.</p>
+          <div class="video-actions">
+            <a class="btn btn-dark" href="#">Más info</a>
+            <a class="btn btn-light" href="#">Guardar</a>
+          </div>
+        </div>
+        <aside class="video-side">
+          <button type="button">❤ <span>9.9K</span></button>
+          <button type="button">💬 <span>301</span></button>
+          <button type="button">↗ <span>Compartir</span></button>
+        </aside>
+      </article>
+
+      <article class="video-item">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4" type="video/mp4" />
+        </video>
+        <div class="video-gradient"></div>
+        <div class="video-content">
+          <p class="video-tag">Roadtrip</p>
+          <h2>Ruta panorámica por la costa</h2>
+          <p>Cambia entre videos con swipe, rueda del mouse o teclas ↑ ↓.</p>
+          <div class="video-actions">
+            <a class="btn btn-dark" href="#">Crear ruta</a>
+            <a class="btn btn-light" href="#">Compartir</a>
+          </div>
+        </div>
+        <aside class="video-side">
+          <button type="button">❤ <span>11.3K</span></button>
+          <button type="button">💬 <span>268</span></button>
+          <button type="button">↗ <span>Compartir</span></button>
+        </aside>
+      </article>
+
+      <article class="video-item">
+        <video
+          class="video-player"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=80"
+        >
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        </video>
+        <div class="video-gradient"></div>
+        <div class="video-content">
+          <p class="video-tag">Relax</p>
+          <h2>Wellness entre montañas</h2>
+          <p>Final del feed. Vuelve arriba con el botón o desliza hacia arriba.</p>
+          <div class="video-actions">
+            <a class="btn btn-dark" href="#">Plan de bienestar</a>
+            <a class="btn btn-light" href="./index.html">Inicio</a>
+          </div>
+        </div>
+        <aside class="video-side">
+          <button type="button">❤ <span>6.4K</span></button>
+          <button type="button">💬 <span>139</span></button>
+          <button type="button">↗ <span>Compartir</span></button>
+        </aside>
+      </article>
     </main>
+
+    <div class="feed-nav" aria-label="Controles de navegación del feed">
+      <button type="button" data-feed-nav="prev" aria-label="Video anterior">↑</button>
+      <button type="button" data-feed-nav="next" aria-label="Siguiente video">↓</button>
+    </div>
+
     <script src="./videos.js"></script>
   </body>
 </html>
